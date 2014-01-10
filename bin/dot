@@ -22,4 +22,16 @@ then
 
 	# Install/Update homebrew & packages
 	$MY_ZSH/homebrew/install.sh 2>&1
+
+	#sublime text 
+	ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl subl
+
+else 
+
+	ln -s /usr/bin/subl3 subl	
+
 fi
+
+# oh-my-zsh
+$MY_ZSH/zsh/install.sh 2>&1
+
