@@ -1,0 +1,14 @@
+#!/bin/sh
+# Setup a machine for Sublime Text 2
+set -x
+
+# symlink settings in
+if [ "$(uname -s)" == "Darwin" ]
+	sublime_dir=~/Library/Application\ Support/Sublime\ Text\ 3/Packages
+else
+	sublime_dir=~/.config/sublime-text-3/Packages
+fi
+
+mv "$sublime_dir/User" "$sublime_dir/User.backup"
+ln -s "$MY_ZSH/sublime3/User" "$sublime_dir"
+

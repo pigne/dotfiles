@@ -1,0 +1,19 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_complete": true,
+	"auto_complete_commit_on_tab": true,
+	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
+	"dictionary": "Packages/Language - English/en_US.dic",
+	"font_size": 13,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"show_encoding": true,
+	"show_line_endings": true,
+	"soda_classic_tabs": true,
+	"soda_folder_icons": true,
+	"spell_check": true,
+	"theme": "Soda Dark 3.sublime-theme"
+}

@@ -7,4 +7,10 @@ then
   alias l="gls -lAh --color"
   alias ll="gls -l --color"
   alias la='gls -A --color'
+else
+  alias ls='ls -Gp'
+  alias ll='ls -Glp'
+  alias la='ls -Glap'
 fi
+
+alias vi='vim'
