@@ -24,11 +24,11 @@ then
 	$MY_ZSH/homebrew/install.sh 2>&1
 
 	#sublime text 
-	ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl subl
+	ln -s /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl $MY_ZSH/bin/subl
 
 else 
 
-	ln -s /usr/bin/subl3 subl	
+	ln -s /usr/bin/subl3 $MY_ZSH/bin/subl	
 
 fi
 
