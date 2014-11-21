@@ -1,7 +1,8 @@
 ZSH=$HOME/.oh-my-zsh
-ZSH_THEME="candy"
+
+ZSH_THEME="random"
 DISABLE_AUTO_UPDATE="true"
-DISABLE_LS_COLORS="true"
+DISABLE_LS_COLORS="false"
 
 #plugins: git
 plugins=(fasd history-substring-search history bundler brew gem rbates mvn cp node npm svn ssh-agent github) 

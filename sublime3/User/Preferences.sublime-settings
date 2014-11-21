@@ -2,9 +2,9 @@
 	"always_show_minimap_viewport": true,
 	"auto_complete": true,
 	"auto_complete_commit_on_tab": true,
-	"color_scheme": "Packages/User/Monokai Soda.tmTheme",
+	"color_scheme": "Packages/User/Espresso Soda.tmTheme",
 	"dictionary": "Packages/Language - English/en_US.dic",
-	"font_size": 13,
+	"font_size": 16,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -15,5 +15,5 @@
 	"soda_classic_tabs": true,
 	"soda_folder_icons": true,
 	"spell_check": true,
-	"theme": "Soda Dark 3.sublime-theme"
+	"theme": "El Capitan.sublime-theme"
 }

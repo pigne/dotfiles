@@ -1,23 +1,48 @@
 [
-// Modified Sublime-REPL keybindings for an "R-friendly" set of shortcuts.
-// Copy and paste this text into the Key Bindings - User (under Preferences menu).
-// For more information, see http://tomschenkjr.net/2012/05/17/using-sublime-text-2-for-r/
- 
-// Executes a selection of text in REPL, latter only displays code and does not execute
-{ "keys": ["super+shift+r"], "command": "repl_transfer_current", "args": {"scope": "selection"}},
-{ "keys": ["super+shift+r", "r"], "command": "repl_transfer_current", "args": {"scope": "selection", "action":"view_write"}},
- 
-// Executes the entire file (build) in REPL, latter only displays code and does not execute
-//{ "keys": ["super + f7"], "command": "repl_transfer_current", "args": {"scope": "file"}},
-//{ "keys": ["super + f7", "r"], "command": "repl_transfer_current", "args": {"scope": "file", "action":"view_write"}},
- 
-// Executes line(s) of text in REPL terminal, latter only displays code and does not execute
-{ "keys": ["super+alt+r"], "command": "repl_transfer_current", "args": {"scope": "lines"}},
-{ "keys": ["super+alt+r", "r"], "command": "repl_transfer_current", "args": {"scope": "lines", "action":"view_write"}},
- 
-// Executes a block (e.g., a custom function) of text in REPL terminal, latter only displays code and does not execute
-{ "keys": ["super+shift+alt+r"], "command": "repl_transfer_current", "args": {"scope": "block"}},
-{ "keys": ["super+shift+alt+r", "r"], "command": "repl_transfer_current", "args": {"scope": "block", "action":"view_write"}}
+	
+	{ "keys": ["ctrl+b"], "command": "run"},
+	
 
+
+	// Modified Sublime-REPL keybindings for an "R-friendly" set of shortcuts.
+	// Copy and paste this text into the Key Bindings - User (under Preferences menu).
+	// For more information, see http://tomschenkjr.net/2012/05/17/using-sublime-text-2-for-r/
+	 
+	// Executes a selection of text in REPL, latter only displays code and does not execute
+	{ "keys": ["super+shift+r"], "command": "repl_transfer_current", "args": {"scope": "selection"}},
+	{ "keys": ["super+shift+r", "r"], "command": "repl_transfer_current", "args": {"scope": "selection", "action":"view_write"}},
+	 
+	// Executes the entire file (build) in REPL, latter only displays code and does not execute
+	//{ "keys": ["super + f7"], "command": "repl_transfer_current", "args": {"scope": "file"}},
+	//{ "keys": ["super + f7", "r"], "command": "repl_transfer_current", "args": {"scope": "file", "action":"view_write"}},
+	 
+	// Executes line(s) of text in REPL terminal, latter only displays code and does not execute
+	{ "keys": ["super+alt+r"], "command": "repl_transfer_current", "args": {"scope": "lines"}},
+	{ "keys": ["super+alt+r", "r"], "command": "repl_transfer_current", "args": {"scope": "lines", "action":"view_write"}},
+	 
+	// Executes a block (e.g., a custom function) of text in REPL terminal, latter only displays code and does not execute
+	{ "keys": ["super+shift+alt+r"], "command": "repl_transfer_current", "args": {"scope": "block"}},
+	{ "keys": ["super+shift+alt+r", "r"], "command": "repl_transfer_current", "args": {"scope": "block", "action":"view_write"}},
+
+
+
+	//
+	// Number generator
+	//
+	{ "keys": ["super+ctrl+n"], "command": "prompt_insert_nums" },
+	{ "keys": ["super+shift+ctrl+n"], "command": "prompt_insert_nums", "args": { "automatic": false } },
+
+
+	// advance new file
+	{ "keys": ["super+alt+n"], "command": "advanced_new_file_new"},
+	{ "keys": ["shift+super+alt+n"], "command": "advanced_new_file_new", "args": {"is_python": true}},
+	{
+		"keys": ["tab"],
+		"command": "insert",
+		"args": {"characters": "\t"},
+		"context": [{
+			"key": "setting.anf_panel"
+		}]
+	}
 ]
 

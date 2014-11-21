@@ -1,3 +1,3 @@
-export PATH="./bin:$HOME/.rbenv/shims:/usr/local/bin:/usr/local/sbin:$HOME/.sfs:$MY_ZSH/bin:$PATH"
+export PATH="/usr/local/bin:/usr/local/sbin:$MY_ZSH/bin:/usr/local/share/npm/bin:$PATH:$HOME/bin"
 
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
