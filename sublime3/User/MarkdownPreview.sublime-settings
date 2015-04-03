@@ -1,0 +1,9 @@
+{
+	"parser": "markdown",
+	"extensions": ["default", "definition_lists", "github", "b64", "extra"],
+	"enable_highlight" : true,
+	"image_path_conversion": "relative",
+	"css":"/Users/pigne/Documents/Web/main.css",
+	"html_template":"/Users/pigne/Documents/Web/markdown.html",
+    "skip_default_stylesheet": false
+}

@@ -1,4 +1,5 @@
 #!/bin/sh
+
 #
 # Homebrew
 #
@@ -6,17 +7,21 @@
 # using Homebrew.
 
 if [ "$(uname -s)" == "Darwin" ]
+then
 	# Check for Homebrew
-	if test ! $(which brew)
+	if [ ! -e $(which brew) ]
 	then
 	  echo " - Install Homebrew"
-	  ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)" > /tmp/homebrew-install.log
+	  #ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)" > /tmp/homebrew-install.log
 	else
 		echo " - Update Homebrew"
-		brew update
+		#brew update
 	fi
 	echo " - Install Homebrew packages"
+	
 	# Install homebrew packages
-	brew install grc coreutils spark
+	#brew install grc coreutils spark
+
 fi
+
 exit 0

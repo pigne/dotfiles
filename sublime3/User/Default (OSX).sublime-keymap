@@ -2,7 +2,10 @@
 	
 	{ "keys": ["ctrl+b"], "command": "run"},
 	
-
+	// My Snippets
+	{ "keys": ["ctrl+e"], "command": "insert_snippet", "args": { "name": "Packages/User/Snippets/latex-emph.sublime-snippet" } },
+	{ "keys": ["ctrl+i"], "command": "insert_snippet", "args": { "name": "Packages/User/Snippets/latex-italic.sublime-snippet" } },
+	{ "keys": ["ctrl+b"], "command": "insert_snippet", "args": { "name": "Packages/User/Snippets/latex-bold.sublime-snippet" } },
 
 	// Modified Sublime-REPL keybindings for an "R-friendly" set of shortcuts.
 	// Copy and paste this text into the Key Bindings - User (under Preferences menu).
